@@ -26,10 +26,6 @@ while True:
     index = int(pilihan) - 1
     jumlah = input(f"Masukkan jumlah {tuple_jenis[index]} yang ingin dibeli: ")
     
-    if not jumlah.isnumeric() or int(jumlah) <= 0:
-        print("Jumlah harus angka positif!")
-        continue
-    
     keranjang[index] += int(jumlah)
     print(f"{tuple_jenis[index]} x{jumlah} ditambahkan ke keranjang. Total sementara: Rp {sum(keranjang * list_harga):,}")
 
